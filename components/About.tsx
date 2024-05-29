@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
+import { PlayCircleIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 
 const About = () => {
@@ -16,18 +16,23 @@ const About = () => {
           <div className="mb-[3rem] flex items-center md:space-x-10">
             <span className="w-[100px] hidden md:block h-[5px] bg-slate-400 rounded-md"></span>
             <p className="text-[19px] text-slate-300 w-[80%]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              quod corporis officia officiis molestias illum! Odio, praesentium
-              minima suscipit excepturi distinctio quia deleniti rem nulla,
-              dicta asperiores odit! Nihil, deserunt.
+              Publicitária, Web developer, Fotógrafa, Design Thinker, Google
+              Innovator e apaixonada por Educação. Como eu me tornei uma
+              Instrutora certificada Google?
             </p>
           </div>
-            <button className="px-[2rem] hover:bg-yellow-400 transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2">
-              <p> Download CV </p>
-              <ArrowDownTrayIcon className="w-[1.6rem] h-[1.7rem] text-black" />
-            </button>
+		  <a href="https://youtu.be/etzWzhyv3jU?si=ojotxrcmMaD8W-JG" target="_blank">
+          <button className="flex items-center space-x-2">
+            <PlayCircleIcon className="w-[4rem] h-[4rem] hover:text-yellow-400 transition-all duration-200 text-[#55e6a5]" />
+            <p className="text-[20px] font-semibold text-white">
+              Watch the Video
+            </p>
+          </button></a>
         </div>
-        <div data-aos="fade-left" className="lg:w-[500px] mx-auto md:mx-0 mt-[2rem] lg:mt-0 lg:h-[500px] h-[300px] relative">
+        <div
+          data-aos="fade-left"
+          className="lg:w-[500px] mx-auto md:mx-0 mt-[2rem] lg:mt-0 lg:h-[500px] h-[300px] relative"
+        >
           <Image
             src="/images/soraia.jpg"
             alt="user"
