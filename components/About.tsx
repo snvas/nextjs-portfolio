@@ -8,10 +8,10 @@ const About = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">
         <div>
           <h1 className="text-[20px] font-bold uppercase text-[#55e6a5] md-[1rem]">
-            ABOUT ME
+            SOBRE MIM
           </h1>
           <h2 className="text-[25px] md:text-[35px] lg:text-[45px] md:leading-[3rem] leading-[2rem] capitalize mb-[3rem] font-bold text-white">
-            Transforming <span className="text-yellow-400">Visions</span>
+            Transformando <span className="text-yellow-400">Visões</span>
           </h2>
           <div className="mb-[3rem] flex items-center md:space-x-10">
             <span className="w-[100px] hidden md:block h-[5px] bg-slate-400 rounded-md"></span>
@@ -25,7 +25,7 @@ const About = () => {
           <button className="flex items-center space-x-2">
             <PlayCircleIcon className="w-[4rem] h-[4rem] hover:text-yellow-400 transition-all duration-200 text-[#55e6a5]" />
             <p className="text-[20px] font-semibold text-white">
-              Watch the Video
+              Assista ao Video
             </p>
           </button></a>
         </div>

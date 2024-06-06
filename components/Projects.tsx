@@ -62,9 +62,9 @@ const projectsData = [
 
 const Projects = () => {
   return (
-    <div className="bg-[#02050a] pt-[4rem] md:pt-[8rem] pb-[2rem]">
+    <div id="projects" className="bg-[#02050a] pt-[4rem] md:pt-[8rem] pb-[2rem]">
       <h1 className="heading">
-        Pro<span className="text-yellow-400">Jects</span>
+        Pro<span className="text-yellow-400">Jetos</span>
       </h1>
 		<div className="w-[80%] pt-[2rem] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[3rem] mb-20">
 			{projectsData.map((project) => (
