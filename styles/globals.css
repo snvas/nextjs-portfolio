@@ -23,4 +23,11 @@
     @apply transform cursor-pointer hover:translate-y-6 transition-all duration-200 relative bg-white
 	w-[100%] border-[20px] h-[200px] md:h-[300px] border-[#09101a] rounded-lg;
   }
+  item-title {
+    @apply hover:text-xl transition-all;
+  }
+
+  .item-ul {
+    @apply list-disc list-inside text-lg p-4;
+  }
 }

@@ -18,16 +18,19 @@ const Hero = () => {
             Olá, Eu sou a <span className="text-yellow-400"> Soraia</span>
           </h1>
           <TextEffect />
+		  <div className="flex flex-row gap-5">
+		  <Image src="/images/human-coder.png" alt="Human Coder" width={"200"} height={"200"}/>
           <p className="mt-[1.5rem] text-[18px] text-[#ffffFF92]">
             Engenheira de Software pela 42 São Paulo. +10 anos de experiência
             gerenciando e desenvolvendo projetos de aplicações web com
             conhecimentos HTML 5, CSS 3, JavaScript,Tailwind, GIT, Docker e
             WordPress.
           </p>
+		  </div>
           <div className="mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row items-center sm:space-x-6">
             <a className="px-[2rem] hover:bg-yellow-400 transition-all duration-200 py-[1rem] text-[18px] 
 			font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2" href="https://www.linkedin.com/in/soraianovaes/" target="_blank">
-              <p> Download LinkeIn CV </p>
+              <p>LinkedIn CV </p>
               <ArrowDownTrayIcon className="w-[1.6rem] h-[1.7rem] text-black" />
             </a>
 			

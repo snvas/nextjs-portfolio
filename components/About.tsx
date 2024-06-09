@@ -14,12 +14,14 @@ const About = () => {
             Transformando <span className="text-yellow-400">Visões</span>
           </h2>
           <div className="mb-[3rem] flex items-center md:space-x-10">
-            <span className="w-[100px] hidden md:block h-[5px] bg-slate-400 rounded-md"></span>
+		  <Image src="/images/Champion-google.png" alt="Human Coder" width={"200"} height={"200"}/>
+        
             <p className="text-[19px] text-slate-300 w-[80%]">
               Publicitária, Web developer, Fotógrafa, Design Thinker, Google
               Innovator e apaixonada por Educação. Como eu me tornei uma
               Instrutora certificada Google?
             </p>
+
           </div>
 		  <a href="https://youtu.be/etzWzhyv3jU?si=ojotxrcmMaD8W-JG" target="_blank">
           <button className="flex items-center space-x-2">

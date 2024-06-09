@@ -5,10 +5,10 @@ import About from "@/components/About";
 import Services from "@/components/Services";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
+import Projects42 from "@/components/Projects42";
 import Footer from "@/components/Footer";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
-
 import React, {useEffect, useState} from "react";
 
 const HomePage = () => {
@@ -60,6 +60,7 @@ AOS.init({
 			<Skills/>
 			{/**Projects */}
 			<Projects/>
+			<Projects42/>
 			<Footer/>
 		</div>
       </div>
