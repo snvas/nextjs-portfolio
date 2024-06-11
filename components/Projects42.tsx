@@ -157,7 +157,7 @@ const Projects42 = () => {
         {projects.map((project, index) => (
 			<div key={index} data-aos="zoom-in-right">
 			  <Card className="bg-[#1b1931] text-white w-[95%] mx-auto md:p-10 p-6 h-full rounded-sm">
-            <div className="gap-4 items-start text-white flex flex-row">
+            <div className="gap-4 items-start text-white flex md:flex-row flex-col items-center">
               <a
                 href={project.path}
                 className="hover:scale-125 transition-all"
