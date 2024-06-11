@@ -132,9 +132,9 @@ const Projects42 = () => {
 	  <h1 className="heading">
 	  Projetos desenvolvidos na <span className="text-yellow-400">42 São Paulo</span>
 				</h1>
-				<div className="flex flex-row items-center gap-10 justify-center">
+				<div className="flex md:flex-row flex-col items-center md:gap-10 gap-3 justify-center">
 				<Image src="/images/human-coder.png" alt="Human Coder" width={"200"} height={"200"}/>
-				<p className="mt-[1.5rem] text-[14px] md:text-[18px] text-[#ffffFF92] w-[70%]">
+				<p className="mt-[1.5rem] text-[14px] md:text-[18px] text-[#ffffFF92] md:w-[70%] w-[95%]">
           Em minha formação pela École 42, desenvolvi um conjunto diversificado
           de projetos que atravessaram as fronteiras tradicionais da ciência da
           computação, enfrentando desde a reconstrução de funções de bibliotecas
@@ -156,7 +156,7 @@ const Projects42 = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 mt-16 lg:gap-10 gap-4 container mx-auto">
         {projects.map((project, index) => (
 			<div key={index} data-aos="zoom-in-right">
-			  <Card className="bg-[#1b1931] text-white w-[90%] mx-auto md:p-10 p-6 h-full rounded-sm">
+			  <Card className="bg-[#1b1931] text-white w-[95%] mx-auto md:p-10 p-6 h-full rounded-sm">
             <div className="gap-4 items-start text-white flex flex-row">
               <a
                 href={project.path}
