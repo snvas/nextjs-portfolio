@@ -9,7 +9,7 @@ const TextEffect = () => {
         1500, // wait 1s before replacing "Mice" with "Hamsters"
         'Web Developer',
         1500,
-        'FrontEnd Developer',
+        'Front End Developer',
 		1500,
         'Product Owner',
 		1500,
