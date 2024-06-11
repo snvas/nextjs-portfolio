@@ -13,8 +13,8 @@ const About = () => {
           <h2 className="text-[25px] md:text-[35px] lg:text-[45px] md:leading-[3rem] leading-[2rem] capitalize mb-[3rem] font-bold text-white">
             Transformando <span className="text-yellow-400">Visões</span>
           </h2>
-          <div className="mb-[3rem] flex items-center md:space-x-10">
-		  <Image src="/images/Champion-google.png" alt="Human Coder" width={"200"} height={"200"}/>
+          <div className="mb-[3rem] flex xl:flex-row flex-col items-center md:space-x-10 rounded-sm">
+		  <Image src="/images/Champion-google.png" alt="Human Coder" width={"200"} height={"200"} className="mx-auto p-4"/>
         
             <p className="text-[19px] text-slate-300 w-[80%]">
               Publicitária, Web developer, Fotógrafa, Design Thinker, Google
@@ -33,16 +33,16 @@ const About = () => {
         </div>
         <div
           data-aos="fade-left"
-          className="lg:w-[500px] mx-auto md:mx-0 mt-[2rem] lg:mt-0 lg:h-[500px] h-[300px] relative"
+          className="lg:w-[500px] mx-auto md:mx-0 mt-[2rem] lg:mt-0 lg:h-[500px] w-[350px] h-[350px] relative hidden md:block" 
         >
           <Image
             src="/images/soraia.jpg"
             alt="user"
             layout="fill"
             objectFit="contain"
-            className="relative z-[11] w-[100%] h-[100%] object-contain"
+            className="relative z-[11] w-[100%] h-[100%] object-contain rounded-sm"
           />
-          <div className="absolute w-[100%] h-[100%] z-[10] bg-[#55e6a5] top-[-2rem] right-[-2rem]"></div>
+          <div className="absolute w-[100%] h-[100%] z-[10] bg-[#55e6a5] top-[-2rem] right-[-2rem] rounded-sm"></div>
         </div>
       </div>
     </div>

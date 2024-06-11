@@ -1,5 +1,7 @@
 import { XMarkIcon } from "@heroicons/react/16/solid";
 import React from "react";
+import Link from "next/link";
+
 
 interface Props {
   nav: boolean;
@@ -14,12 +16,11 @@ const MobileNav = ({ nav, closeNav }: Props) => {
       className={`fixed ${navAnimation} transform transition-all duration-300 top-0 left-0 right-0 bottom-0 z-[100000] bg-[#09191a]`}
     >
       <div className="w-[100vw] h-[100vh] flex flex-col items-center justify-center">
-        <div className="nav-link-mobile">HOME</div>
-        <div className="nav-link-mobile">SERVICE</div>
-        <div className="nav-link-mobile">ABOUT</div>
-        <div className="nav-link-mobile">PROJECT</div>
-        <div className="nav-link-mobile">BLOG</div>
-        <div className="nav-link-mobile">CONTACT</div>
+	  <div className="nav-link-mobile"><Link href={"/"}>Home</Link></div>
+        <div className="nav-link-mobile"><Link href={"/#services"}>SERVIÇOS</Link></div>
+        <div className="nav-link-mobile"><Link href={"/#projects"}>PROJETOS</Link></div>
+        <div className="nav-link-mobile"><Link href={"https://dev.soraianovaes.com.br"} target="_blank">VUE PORTFOLIO</Link></div>
+        <div className="nav-link-mobile"><Link href={"/#contato"}>CONTATO</Link></div>
       </div>
       <div
         onClick={closeNav}

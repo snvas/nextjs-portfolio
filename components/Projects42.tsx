@@ -127,12 +127,14 @@ const projects: Project[] = [
 
 const Projects42 = () => {
   return (
-    <div className="bg-[#121121] pb-[3rem] pt-[4rem] md:pt-[8rem]">
+    <div className="bg-[#121121] p-[3rem] md:pt-[8rem]">
       <div className="mt-16 md:mt-0 mx-auto container text-white" id="projects">
-        <h2 className="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-          Projetos desenvolvidos na 42 São Paulo
-        </h2>
-        <p className="text-lg mt-4">
+	  <h1 className="heading">
+	  Projetos desenvolvidos na <span className="text-yellow-400">42 São Paulo</span>
+				</h1>
+				<div className="flex flex-row items-center gap-10 justify-center">
+				<Image src="/images/human-coder.png" alt="Human Coder" width={"200"} height={"200"}/>
+				<p className="mt-[1.5rem] text-[14px] md:text-[18px] text-[#ffffFF92] w-[70%]">
           Em minha formação pela École 42, desenvolvi um conjunto diversificado
           de projetos que atravessaram as fronteiras tradicionais da ciência da
           computação, enfrentando desde a reconstrução de funções de bibliotecas
@@ -146,11 +148,15 @@ const Projects42 = () => {
           preparando-me para enfrentar desafios tecnológicos complexos com
           soluções inovadoras e eficazes.
         </p>
+
+				</div>
+       
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 mt-16 gap-28 container mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 mt-16 lg:gap-10 gap-4 container mx-auto">
         {projects.map((project, index) => (
-          <div key={index} data-aos="zoom-in-right">
+			<div key={index} data-aos="zoom-in-right">
+			  <Card className="bg-[#1b1931] text-white w-[90%] mx-auto md:p-10 p-6 h-full rounded-sm">
             <div className="gap-4 items-start text-white flex flex-row">
               <a
                 href={project.path}
@@ -176,11 +182,12 @@ const Projects42 = () => {
                 <p className="mt-2 leading-relaxed">{project.description}</p>
               </div>
             </div>
+		  </Card>
           </div>
         ))}
       </div>
 	  <div className="container flex flex-col gap-2 mx-auto mt-20" data-aos="fade-up">
-	  <Card className="bg-[#1b1931] text-white md:w-[70%] w-full mx-auto md:p-10 p-3">
+	  <Card className="bg-[#1b1931] text-white md:w-[70%] w-[98%] mx-auto md:p-10 p-3 rounded-sm">
       <CardBody>
 		<h1 className="text-4xl font-bold text-center">Common Core Curriculum 42</h1>
 	  <Image src="/images/human-coder.png" alt="Human Coder" width={"300"} height={"300"} className="mx-auto p-4"/>

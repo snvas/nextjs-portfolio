@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import {Card} from "@nextui-org/card";
 
 // Dados dos projetos
 const projectsData = [
@@ -69,7 +70,9 @@ const Projects = () => {
 		<div className="w-[80%] pt-[2rem] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[3rem] mb-20">
 			{projectsData.map((project) => (
 			<div key={project.id} data-aos="fade-up" data-aos-delay="300">
-				<div className="project-card">
+				<Card className="transform cursor-pointer hover:translate-y-6 transition-all duration-200 relative bg-white
+	w-[100%] border-[20px] h-[200px] md:h-[300px] border-gray-800 rounded-sm">
+				
 					<a href={project.link} target="_blank">
             <Image
               src={project.imageSrc}
@@ -78,7 +81,8 @@ const Projects = () => {
               className="object-contain shadow-lg"
 			  />
 			  </a>
-          </div>
+          
+		  </Card>
 		  </div>
 		))}
 		
