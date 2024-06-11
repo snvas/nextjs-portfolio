@@ -163,12 +163,12 @@ const Projects42 = () => {
                 className="hover:scale-125 transition-all"
                 target="_blank"
               >
-                <div className="md:p-2 w-20 h-20 md:w-36 md:h-36 shrink-0">
+                <div className="md:p-2 w-36 h-36 md:w-40 md:h-40 shrink-0">
                   <Image
                     src={project.icon}
                     alt={project.title}
-                    width={150}
-                    height={150}
+                    width={250}
+                    height={250}
                   />
                 </div>
               </a>
