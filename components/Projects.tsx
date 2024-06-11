@@ -109,30 +109,29 @@ const Projects = () => {
         {projectsData.map((project) => (
           <div key={project.id} data-aos="fade-up" data-aos-delay="300">
             <Card
-              className="transform cursor-pointer hover:translate-y-6 transition-all duration-200 relative bg-white
-	w-[100%] border-[20px] h-[200px] md:h-[300px] border-gray-800 rounded-sm"
+              className="transform cursor-pointer md:hover:translate-y-[-12px] transition-all duration-200 relative bg-white
+	w-[100%] border-[14px] h-fit border-gray-800 rounded-sm"
             >
-				     
-			 
               <a href={project.link} target="_blank">
                 <Image
                   src={project.imageSrc}
                   alt={project.alt}
-				 layout="fill"
-                  className="object-cover shadow-lg"
+				  width={600}
+				  height={600}
+	              className="object-fill items-center text-center justify-center flex"
                 />
               </a>
-			  <CardFooter className="pb-0 pt-2 px-4 flex-col mt-20">
+            </Card>
+			<div className="pb-0 pt-2 px-4 flex-col">
             <h3
-              className="text-base font-semibold leading-7 tracking-tight dark:text-gray-800"
+              className="text-base font-semibold leading-7 tracking-tight dark:text-gray-200"
             >
               { project.name }
             </h3>
             <p className="text-sm font-semibold leading-6 text-indigo-600">
               {project.stack }
             </p>
-			  </CardFooter>
-            </Card>
+			  </div>
           </div>
         ))}
       </div>

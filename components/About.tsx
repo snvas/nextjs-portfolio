@@ -33,16 +33,17 @@ const About = () => {
         </div>
         <div
           data-aos="fade-left"
-          className="lg:w-[500px] mx-auto md:mx-0 mt-[2rem] lg:mt-0 lg:h-[500px] w-[350px] h-[350px] relative hidden md:block" 
+          className="lg:w-[500px] mx-auto md:mx-0 mt-[2rem] lg:mt-0 lg:h-[500px] w-[350px] h-[350px] justify-center relative hidden md:block" 
         >
           <Image
             src="/images/soraia.jpg"
             alt="user"
-            layout="fill"
+			height={500}
+			width={500}
             objectFit="contain"
             className="relative z-[11] w-[100%] h-[100%] object-contain rounded-sm"
           />
-          <div className="absolute w-[100%] h-[100%] z-[10] bg-[#55e6a5] top-[-2rem] right-[-2rem] rounded-sm"></div>
+          <div className="absolute w-[100%] h-[100%] z-[10] bg-[#55e6a5] top-[0rem] right-[-2rem] rounded-sm"></div>
         </div>
       </div>
     </div>

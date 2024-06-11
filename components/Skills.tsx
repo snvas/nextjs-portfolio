@@ -1,6 +1,7 @@
 import React from "react";
 import SkillsItem from "./SkillsItem";
 import SkillsLanguage from "./SkillsLanguage";
+import { Card } from "@nextui-org/card";
 
 const Skills = () => {
   return (
@@ -10,6 +11,7 @@ const Skills = () => {
       </h1>
       <div className="w-[80%] mx-auto pt-[4rem] md:pt-[8rem] grid grid-cols-1 md:grid-cols-2 gap-[2rem] items-center">
         <div>
+			
           <SkillsItem title="Product Owner" year="2021 - 2024" description="" />
           <SkillsItem title="Project Manager" year="2004 - 2015"  description="" />
           <SkillsLanguage

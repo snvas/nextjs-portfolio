@@ -3,7 +3,7 @@ import { MapIcon } from "@heroicons/react/20/solid";
 import { DevicePhoneMobileIcon, EnvelopeIcon } from "@heroicons/react/16/solid";
 
 const Footer = () => {
-	return <div id="contato" className="pt-[8rem] pb-[4rem] bg-[#02050a]">
+	return <div id="contato" className="pt-[8rem] pb-[4rem]  bg-[#09101a]">
 		<div className="grid border-b-[1px] pb-[6rem] border-gray-400 grid-cols-1 xl:grid-cols-3 lg:grid-cols-2 w-[80%] mx-auto gap-[2rem]">
 		<div className="flex items-center space-x-4">
 			<div className="md:w-[6.5rem] md:h-[6.5rem] w-[5rem] h-[5rem] flex items-center justify-center rounded-full bg-[#55e6a5]">

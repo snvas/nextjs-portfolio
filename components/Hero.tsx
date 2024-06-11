@@ -10,17 +10,17 @@ const Hero = () => {
 	//const [showModal, setShowModal] = useState(false);
   return (
 	<Fragment>
-    <div className="h-[88vh] bg-[url('/images/banner.jpg')] mt-[10vh] bg-cover bg-center bg-black">
+    <div className="h-[88vh] bg-[url('/images/banner.jpg')] mt-[10vh] bg-cover bg-center bg-black pt-10">
       <Particle />
-      <div className="w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap-[3rem] h-[100%] items-center">
+      <div className="w-[80%] grid-cols-1 mx-auto grid xl:grid-cols-2 gap-[3rem] h-[100%] items-center">
         <div>
           <h1 className="text-[35px] md:text-[50px] text-white font-bold">
             Olá, Eu sou a <span className="text-yellow-400"> Soraia</span>
           </h1>
           <TextEffect />
-		  <div className="flex lg:flex-row flex-col gap-5 mx-auto items-center">
+		  <div className="flex lg:flex-row flex-col gap-5 mx-auto items-center mt-4">
 		  <Image src="/images/human-coder.png" alt="Human Coder" width={"200"} height={"200"}/>
-          <p className="mt-[1.5rem] text-[14px] md:text-[18px] text-[#ffffFF92]">
+          <p className="text-[14px] md:text-[18px] text-[#ffffFF92]">
             Engenheira de Software pela 42 São Paulo. +10 anos de experiência
             gerenciando e desenvolvendo projetos de aplicações web com
             conhecimentos HTML 5, CSS 3, JavaScript,Tailwind, GIT, Docker e
@@ -45,12 +45,13 @@ const Hero = () => {
         </div>
         <div
           data-aos="zoom-in"
-          className="w-[500px] hidden bg-[#55e6a5] relative lg:flex items-center rounded-full h-[500px]  "
+          className="w-[512px] hidden bg-[#55e6a5] mx-auto relative xl:flex items-center rounded-full h-[512px]  "
         >
           <Image
             src="/images/soraia2.png"
             alt="Soraia Novaes"
-            layout="fill"
+            height={500}
+			width={500}
             className="object-cover rounded-full"
           />
         </div>

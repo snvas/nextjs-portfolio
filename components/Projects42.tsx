@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import {Card, CardBody} from "@nextui-org/card";
-
+import { Card, CardBody } from "@nextui-org/card";
 
 interface Project {
   title: string;
@@ -129,151 +128,178 @@ const Projects42 = () => {
   return (
     <div className="bg-[#121121] p-[3rem] md:pt-[8rem]">
       <div className="mt-16 md:mt-0 mx-auto container text-white" id="projects">
-	  <h1 className="heading">
-	  Projetos desenvolvidos na <span className="text-yellow-400">42 São Paulo</span>
-				</h1>
-				<div className="flex md:flex-row flex-col items-center md:gap-10 gap-3 justify-center">
-				<Image src="/images/human-coder.png" alt="Human Coder" width={"200"} height={"200"}/>
-				<p className="mt-[1.5rem] text-[14px] md:text-[18px] text-[#ffffFF92] md:w-[70%] w-[95%]">
-          Em minha formação pela École 42, desenvolvi um conjunto diversificado
-          de projetos que atravessaram as fronteiras tradicionais da ciência da
-          computação, enfrentando desde a reconstrução de funções de bibliotecas
-          padrão até o desenvolvimento de aplicações complexas e sistemas
-          integrados. Cada projeto foi cuidadosamente projetado para não apenas
-          reforçar competências técnicas em linguagens como C e C++, mas também
-          para instigar a resolução de problemas complexos, otimização de
-          processos e a integração de múltiplas tecnologias. Esta experiência
-          prática proporcionou uma compreensão profunda das exigências e nuances
-          da programação de alto nível e do desenvolvimento de sistemas,
-          preparando-me para enfrentar desafios tecnológicos complexos com
-          soluções inovadoras e eficazes.
-        </p>
-
-				</div>
-       
+        <h1 className="heading">
+          Projetos desenvolvidos na{" "}
+          <span className="text-yellow-400">42 São Paulo</span>
+        </h1>
+        <div className="flex md:flex-row flex-col items-center md:gap-10 gap-3 justify-center">
+          <Image
+            src="/images/human-coder.png"
+            alt="Human Coder"
+            width={200}
+            height={200}
+            className="hover:scale-110"
+          />
+          <p className="mt-[1.5rem] text-[14px] md:text-[18px] text-[#ffffFF92] md:w-[70%] w-[95%]">
+            Em minha formação pela École 42, desenvolvi um conjunto
+            diversificado de projetos que atravessaram as fronteiras
+            tradicionais da ciência da computação, enfrentando desde a
+            reconstrução de funções de bibliotecas padrão até o desenvolvimento
+            de aplicações complexas e sistemas integrados. Cada projeto foi
+            cuidadosamente projetado para não apenas reforçar competências
+            técnicas em linguagens como C e C++, mas também para instigar a
+            resolução de problemas complexos, otimização de processos e a
+            integração de múltiplas tecnologias. Esta experiência prática
+            proporcionou uma compreensão profunda das exigências e nuances da
+            programação de alto nível e do desenvolvimento de sistemas,
+            preparando-me para enfrentar desafios tecnológicos complexos com
+            soluções inovadoras e eficazes.
+          </p>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 mt-16 lg:gap-10 gap-4 container mx-auto">
         {projects.map((project, index) => (
-			<div key={index} data-aos="zoom-in-right">
-			  <Card className="bg-[#1b1931] text-white w-[95%] mx-auto md:p-10 p-6 h-full rounded-sm">
-            <div className="gap-4 items-start text-white flex md:flex-row flex-col items-center">
-              <a
-                href={project.path}
-                className="hover:scale-125 transition-all"
-                target="_blank"
-              >
-                <div className="md:p-2 w-36 h-36 md:w-40 md:h-40 shrink-0">
-                  <Image
-                    src={project.icon}
-                    alt={project.title}
-                    width={250}
-                    height={250}
-                  />
+          <div key={index} data-aos="zoom-in-right">
+            <Card className="bg-[#1b1931] text-white w-[95%] mx-auto md:p-10 p-6 h-full rounded-sm">
+              <div className="gap-4 text-white flex md:flex-row flex-col items-center">
+                <a
+                  href={project.path}
+                  className="hover:scale-125 transition-all"
+                  target="_blank"
+                >
+                  <div className="md:p-2 w-36 h-36 md:w-40 md:h-40 shrink-0">
+                    <Image
+                      src={project.icon}
+                      alt={project.title}
+                      width={300}
+                      height={300}
+                    />
+                  </div>
+                </a>
+                <div>
+                  <h3 className="font-semibold text-xl">
+                    {" "}
+                    <a href={project.path} className="item-title">
+                      {project.title}
+                    </a>
+                  </h3>
+                  <p className="mt-2 leading-relaxed text-[14px] md:text-[18px] text-[#ffffFF92]">
+                    {project.description}
+                  </p>
                 </div>
-              </a>
-              <div>
-                <h3 className="font-semibold text-lg">
-                  {" "}
-                  <a href={project.path} className="item-title">
-                    {project.title}
-                  </a>
-                </h3>
-                <p className="mt-2 leading-relaxed">{project.description}</p>
               </div>
-            </div>
-		  </Card>
+            </Card>
           </div>
         ))}
       </div>
-	  <div className="container flex flex-col gap-2 mx-auto mt-20" data-aos="fade-up">
-	  <Card className="bg-[#1b1931] text-white md:w-[70%] w-[98%] mx-auto md:p-10 p-3 rounded-sm">
-      <CardBody>
-		<h1 className="text-4xl font-bold text-center">Common Core Curriculum 42</h1>
-	  <Image src="/images/human-coder.png" alt="Human Coder" width={"300"} height={"300"} className="mx-auto p-4"/>
-      <p className="text-xl font-bold">Fundamentos de Programação:</p>
-      <ul className="item-ul">
-        <li>Aprofundamento no entendimento das linguagens C e C++.</li>
-        <li>
-          Recodificação de funções da biblioteca padrão e criação de funções
-          utilitárias (Libft).
-        </li>
-      </ul>
-      <p className="text-xl font-bold">Técnicas Avançadas de Programação:</p>
-      <ul className="item-ul">
-        <li>
-          Desenvolvimento de algoritmos complexos para classNameificação otimizada
-          de dados (Push Swap).
-        </li>
-        <li>
-          Manipulação de múltiplas estruturas de dados e eficiência algorítmica.
-        </li>
-      </ul>
-      <p className="text-xl font-bold">Engenharia de Software:</p>
-      <ul className="item-ul">
-        <li>
-          Construção de aplicações completas, como servidores HTTP e plataformas
-          de jogos.
-        </li>
-        <li>
-          Implementação de metodologias de software, como I/O Multiplexing
-          (Webserv).
-        </li>
-      </ul>
-      <p className="text-xl font-bold">Desenvolvimento Web e Aplicações em Rede:</p>
-      <ul className="item-ul">
-        <li>
-          Programação de interfaces e aplicações web utilizando HTML, CSS,
-          JavaScript, e frameworks modernos como Svelte (ft_transcendence).
-        </li>
-        <li>
-          Configuração e gerenciamento de redes, entendimento profundo de TCP/IP
-          (NetPractice).
-        </li>
-      </ul>
-      <p className="text-xl font-bold">
-        Gerenciamento de Sistemas e Infraestrutura:
-      </p>
-      <ul className="item-ul">
-        <li>
-          Criação e gestão de máquinas virtuais, servidores SSH, e regras de
-          firewall (Born2beroot).
-        </li>
-        <li>
-          Utilização de Docker para construção de infraestruturas de serviços e
-          orquestração com Docker Compose (Inception).
-        </li>
-      </ul>
-      <p className="text-xl font-bold">
-        Desenvolvimento de Jogos e Gráficos Computacionais:
-      </p>
-      <ul className="item-ul">
-        <li>
-          Desenvolvimento de jogos 2D e entendimento de gráficos computacionais
-          usando bibliotecas como MiniLibX (So_long, Cub3D).
-        </li>
-      </ul>
-      <p className="text-xl font-bold">Multithreading e Concorrência:</p>
-      <ul className="item-ul">
-        <li>
-          Gestão de múltiplos threads e processos, utilizando mutexes para
-          resolver problemas de concorrência e sincronização, como o problema do
-          Jantar dos Filósofos (Philosopher).
-        </li>
-      </ul>
-      <p className="text-xl font-bold">
-        Design de Software e Arquitetura de Sistemas:
-      </p>
-      <ul className="item-ul">
-        <li>
-          Implementação de arquiteturas de software robustas e design de
-          sistemas complexos, como a criação de uma versão própria da função
-          printf e a reimplementação de contêineres STL em C++.
-        </li>
-      </ul>
-	</CardBody>
-		</Card>
-    </div>
+      <div
+        className="flex flex-col gap-2 mx-auto mt-20 w-full"
+        data-aos="fade-up"
+      >
+        <Card className="bg-[#1b1931] text-white md:w-[60%] w-[95%] mx-auto md:p-10 p-3 rounded-sm">
+          <h1 className="heading">
+            Common Core <span className="text-yellow-400">Curriculum 42</span>
+          </h1>
+
+          <CardBody className="text-[#ffffFF92]">
+            <Image
+              src="/images/human-coder.png"
+              alt="Human Coder"
+              width={300}
+              height={300}
+              className="mx-auto p-4"
+            />
+            <p className="text-xl font-bold">Fundamentos de Programação:</p>
+            <ul className="item-ul">
+              <li>Aprofundamento no entendimento das linguagens C e C++.</li>
+              <li>
+                Recodificação de funções da biblioteca padrão e criação de
+                funções utilitárias (Libft).
+              </li>
+            </ul>
+            <p className="text-xl font-bold">
+              Técnicas Avançadas de Programação:
+            </p>
+            <ul className="item-ul">
+              <li>
+                Desenvolvimento de algoritmos complexos para classificação
+                otimizada de dados (Push Swap).
+              </li>
+              <li>
+                Manipulação de múltiplas estruturas de dados e eficiência
+                algorítmica.
+              </li>
+            </ul>
+            <p className="text-xl font-bold">Engenharia de Software:</p>
+            <ul className="item-ul">
+              <li>
+                Construção de aplicações completas, como servidores HTTP e
+                plataformas de jogos.
+              </li>
+              <li>
+                Implementação de metodologias de software, como I/O Multiplexing
+                (Webserv).
+              </li>
+            </ul>
+            <p className="text-xl font-bold">
+              Desenvolvimento Web e Aplicações em Rede:
+            </p>
+            <ul className="item-ul">
+              <li>
+                Programação de interfaces e aplicações web utilizando HTML, CSS,
+                JavaScript, e frameworks modernos como Svelte
+                (ft_transcendence).
+              </li>
+              <li>
+                Configuração e gerenciamento de redes, entendimento profundo de
+                TCP/IP (NetPractice).
+              </li>
+            </ul>
+            <p className="text-xl font-bold">
+              Gerenciamento de Sistemas e Infraestrutura:
+            </p>
+            <ul className="item-ul">
+              <li>
+                Criação e gestão de máquinas virtuais, servidores SSH, e regras
+                de firewall (Born2beroot).
+              </li>
+              <li>
+                Utilização de Docker para construção de infraestruturas de
+                serviços e orquestração com Docker Compose (Inception).
+              </li>
+            </ul>
+            <p className="text-xl font-bold">
+              Desenvolvimento de Jogos e Gráficos Computacionais:
+            </p>
+            <ul className="item-ul">
+              <li>
+                Desenvolvimento de jogos 2D e entendimento de gráficos
+                computacionais usando bibliotecas como MiniLibX (So_long,
+                Cub3D).
+              </li>
+            </ul>
+            <p className="text-xl font-bold">Multithreading e Concorrência:</p>
+            <ul className="item-ul">
+              <li>
+                Gestão de múltiplos threads e processos, utilizando mutexes para
+                resolver problemas de concorrência e sincronização, como o
+                problema do Jantar dos Filósofos (Philosopher).
+              </li>
+            </ul>
+            <p className="text-xl font-bold">
+              Design de Software e Arquitetura de Sistemas:
+            </p>
+            <ul className="item-ul">
+              <li>
+                Implementação de arquiteturas de software robustas e design de
+                sistemas complexos, como a criação de uma versão própria da
+                função printf e a reimplementação de contêineres STL em C++.
+              </li>
+            </ul>
+          </CardBody>
+        </Card>
+      </div>
     </div>
   );
 };
