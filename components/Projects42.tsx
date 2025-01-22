@@ -14,14 +14,14 @@ const projects: Project[] = [
     title: "Libft",
     description:
       "Este é o primeiro projeto como estudante da 42 e o trabalho é recodificar algumas funções da biblioteca padrão C, bem como algumas outras funções utilitárias que serão usadas durante todo o curso.",
-    icon: "https://github.com/ayogun/42-project-badges/blob/main/badges/libftm.png",
+    icon: "/images/badges42/libftm.png",
     path: "https://github.com/snvas/42course_libft",
   },
   {
     title: "Get Next Line",
     description:
       "Este projeto trata de programar uma função que retorna uma linha lido de um descritor de arquivo. Seja um arquivo, stdin ou até mesmo uma conexão de rede, você sempre precisará de uma forma de ler o conteúdo linha por linha.",
-    icon: "https://github.com/ayogun/42-project-badges/blob/main/badges/get_next_linem.png",
+    icon: "/images/badges42/get_next_linem.png",
     path: "https://github.com/snvas/42course_get_next_line",
   },
   {
@@ -35,7 +35,7 @@ const projects: Project[] = [
     title: "Born2beroot",
     description:
       "Born2beroot é um projeto que exige a criação de uma máquina virtual com servidor SSH, regras de firewall e como bônus uma instalação de Wordpress e um serviço como FTP ou DNS. O Sistema Operacional pode ser Debian ou CentOS e um script de monitoramento com informações do sistema operacional deve ser executado a cada 10 minutos.",
-    icon: "https://github.com/ayogun/42-project-badges/blob/main/badges/born2berootm.png",
+    icon: "/images/badges42/born2berootm.png",
     path: "https://soraianovaes.com.br",
   },
   {
